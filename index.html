@@ -19,19 +19,29 @@
 </head>
 <body>
     <main>
-        <form action="login.php" method="post" autocomplete="on">
-            <div>
-                <label for="iusu"><span class="material-symbols-outlined">person</span></label>
-                <input type="email" name="usu" id="iusu" maxlength="20" placeholder="example@email.com">
+        <section>
+            <div id="imagem">
+
             </div>
-            <div>
-                <label for="isen"><span class="material-symbols-outlined">lock</span></label>
-                <input type="password" name="sen" id="isen" min="8" max="25">
+            <div id="login">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post" autocomplete="off">
+                    <div class="login">
+                        <label for="iusu"><span class="material-symbols-outlined">person</span></label>
+                        <input type="email" name="usu" id="iusu" maxlength="20" placeholder="example@email.com" required autocomplete="email">
+                    </div>
+                    <div class="login">
+                        <label for="isen"><span class="material-symbols-outlined">key</span></label>
+                        <input type="password" name="sen" id="isen" minlength="8" maxlength="25" required>
+                    </div>
+                    <div id="entrar">
+                        <input type="submit" value="Entrar">
+                        <a href="#">Esqueci minha senha <span class="material-symbols-outlined">mail</span></a>
+                    </div>
+                </form>
             </div>
-            <div>
-                <input type="submit" value="Entrar">
-            </div>
-        </form>
+        </section>
     </main>
 </body>
 </html>
