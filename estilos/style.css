@@ -4,6 +4,7 @@
     /* Paleta de cores: */
     --verde: #49a09d;
     --verde2: #2d6462;
+    --verde3: #68dbd7;
     --lilas: #5f2c82;
 }
 * {
@@ -69,11 +70,36 @@ form > div.campo {
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0;
+    border: 2px solid var(--lilas);
 }
 div.campo > label {
     display: none;
+}
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input {
+    background-color: var(--verde3);
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    transform: translateY(-13px);
+    border: 0px;
+    padding: 4px;
+    border-radius: 8px;
+}
+div.campo > input::-webkit-input-placeholder {
+    color: rgb(92, 92, 92);
+    font-weight: 500;
+}
+div.campo > input:focus-within {
+    background-color: white;
+    color: black;
 }
 form > input[type=submit]:hover {
     background-color: var(--verde2);
